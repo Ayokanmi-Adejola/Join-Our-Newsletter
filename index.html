@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Join Our Newsletter | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        background: #f4f6fb;
+        font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .newsletter-outer {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+      }
+
+      .newsletter-logo-main {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 32px;
+      }
+
+      .newsletter-heading {
+        font-size: 3rem;
+        font-weight: 800;
+        color: #111;
+        text-align: center;
+        margin-bottom: 18px;
+        letter-spacing: -1px;
+      }
+
+      .newsletter-desc {
+        color: #7b8bb2;
+        font-size: 1.25rem;
+        text-align: center;
+        margin-bottom: 38px;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+
+      .newsletter-card-main {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.10);
+        padding: 38px 36px 24px 36px;
+        max-width: 420px;
+        width: 990px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .newsletter-form-main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .newsletter-input-main {
+        width: 100%;
+        padding: 18px 16px;
+        border: 2px solid #e5e7eb;
+        border-radius: 8px;
+        font-size: 1.15rem;
+        outline: none;
+        background: #f9fafb;
+        color: #232946;
+        transition: border 0.2s;
+      }
+      .newsletter-input-main:focus {
+        border: 2px solid #6366f1;
+        background: #fff;
+      }
+
+      .newsletter-button-main {
+        width: 100%;
+        background: #234be7;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 18px 0;
+        font-size: 1.18rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background 0.2s;
+        box-shadow: 0 2px 8px 0 rgba(99,102,241,0.08);
+      }
+      .newsletter-button-main:hover {
+        background: #1d3bb8;
+      }
+
+      .newsletter-confidential-main {
+        color: #7b8bb2;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 18px;
+        line-height: 1.5;
+      }
+
+      @media (max-width: 900px) {
+        .newsletter-outer {
+          max-width: 98vw;
+        }
+        .newsletter-heading {
+          font-size: 2.1rem;
+        }
+        .newsletter-card-main {
+          padding: 28px 8vw 18px 8vw;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .newsletter-outer {
+          margin-top: 24px;
+        }
+        .newsletter-heading {
+          font-size: 1.3rem;
+        }
+        .newsletter-logo-main {
+          width: 40px;
+          height: 40px;
+        }
+        .newsletter-card-main {
+          padding: 16px 2vw 10px 2vw;
+          border-radius: 12px;
+        }
+        .newsletter-input-main, .newsletter-button-main {
+          font-size: 1rem;
+          padding: 12px 0;
+        }
+      }
+
+      .author-info {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 32px;
+        color: #232946;
+        opacity: 0.7;
+      }
+
+      .author-info a {
+        text-decoration: underline;
+        color: #6366f1;
+        transition: color 0.2s;
+      }
+      .author-info a:hover {
+        color: #232946;
+      }
+
+      @media (max-width: 900px) {
+        .newsletter-card {
+          max-width: 90vw;
+          padding: 36px 16px 28px 16px;
+        }
+        .newsletter-title {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .newsletter-card {
+          padding: 22px 4vw 16px 4vw;
+          border-radius: 16px;
+        }
+        .newsletter-title {
+          font-size: 1.1rem;
+        }
+        .newsletter-logo {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="newsletter-outer">
+      <img src="resources/logo.svg" alt="Newsletter Logo" class="newsletter-logo-main" />
+      <h1 class="newsletter-heading">Join our newsletter</h1>
+      <p class="newsletter-desc">
+        Keep up with our latest collections, exclusive deals, and special offers!<br />
+        We introduce a new collection every week, so stay tuned to snag the hottest items just for you.
+      </p>
+      <div class="newsletter-card-main">
+        <form class="newsletter-form-main" autocomplete="off">
+          <input type="email" id="email" name="email" class="newsletter-input-main" placeholder="Enter your email address" required />
+          <button type="submit" class="newsletter-button-main">Subscribe now</button>
+        </form>
+        <p class="newsletter-confidential-main">Your email is 100% confidential and won’t send you any spam.</p>
+      </div>
+    </div>
+    <div class="author-info">
+      Coded by <a href="#">Ayokanmi Adejola</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
+    </div>
+  </body>
+</html>
