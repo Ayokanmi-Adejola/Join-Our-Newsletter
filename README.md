@@ -47,16 +47,6 @@ To view this project locally:
 
 ---
 
-## 🖼️ Screenshots
-
-<div align="center">
-  <img src="./design/Desktop_1350px.jpg" alt="Desktop Design" width="400" />
-  <img src="./design/Tablet_1024px.jpg" alt="Tablet Design" width="300" />
-  <img src="./design/Mobile_412px.jpg" alt="Mobile Design" width="200" />
-</div>
-
----
-
 ## 📚 What I Learned
 
 - Advanced CSS layout techniques (flexbox, responsive design, media queries)
