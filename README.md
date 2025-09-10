@@ -1,6 +1,6 @@
 
 
-# Join Our Newsletter | devChallenges
+# Join Our Newsletter | devChallenges.io
 
 <div align="center">
   <img src="./thumbnail.jpg" alt="Join Our Newsletter Screenshot" width="600" />
